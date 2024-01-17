@@ -23,7 +23,7 @@ class EventHandler(tcod.event.EventDispatch[Action]):
         elif key == tcod.event.K_RIGHT:
             action = BumpAction(dx=1, dy=0)
 
-        elif key == tcod.event.K_ESCAPE:
+        elif key == tcod.event.KeySym.ESCAPE:
             action = EscapeAction()
 
         # No valid key was pressed
